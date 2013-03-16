@@ -1,0 +1,11 @@
+NIGNX subfilter module - is a replacement for default subfilter module with support for multiple patterns under the same configuration context.
+
+It uses fast Wu-Manber algorithm for multi-pattern search.
+
+The syntax is the same. Except that 'sub_filter_once' currently is not supported.
+You can use several 'sub_filter' directives as follows:
+
+sub_filter string1 replacement1;
+sub_filter string2 replacement2;
+...
+sub_filter stringN replacementN;
